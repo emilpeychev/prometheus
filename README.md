@@ -33,12 +33,13 @@ kubectl apply -f access-prometheus.yaml
 kubectl apply -f deployment-prometheus.yaml
 
 ```
+
 ### Add the exporter `kube-state-metrics`
 
 * Finally add the exporter and query the `NODE_IP:32002`
 
 ```
-kubectl apply -f exporter-prometheus.yaml
+kubectl apply -f exporter-prometheus-kube-state-metrics.yaml
 ```
 
 * If all snapped in place your Prometheus is running on your worker-node_IP:32002
